@@ -1,0 +1,42 @@
+:root {
+    // Font Size (19px = 1vw @screen 1920px)
+    --h1: clamp(2.7rem, 3.789vw + 0.5rem, 4.5rem); //72px
+    --h2: clamp(1.8rem, 2.526vw + 0.5rem, 3rem); //48px
+    --h3: clamp(1.35rem, 1.894vw + 0.5rem, 2.25rem); //36px
+    --h4: clamp(1.5rem, 1.473vw + 0.5rem, 1.75rem); //28px
+    --h5: clamp(1.25rem, 1.3vw + 0.5rem, 1.5rem); //24px
+    --h6: clamp(1.25rem, 1.25rem, 1.25rem); //20px
+    --p: clamp(0.875rem, 0.842vw + 0.5rem, 1rem); //16px
+
+    //Project Specific Colors
+    --primary: #4640DE;
+    --secondary: #25324B;
+    --info: #26A4FF;
+
+    --gray-100: #909298;
+    --gray-200: #515B6F;
+    --gray-300: #D6DDEB;
+    --gray-400: #7C8493;
+    --gray-500: #F8F8FD;
+
+    --dark: #202430;
+    --white: #ffffff;
+
+    --f-regular: 400;
+    --f-medium: 500;
+    --f-semiBold: 600;
+    --f-bold: 700;
+}
+
+$flex-directions: (
+    row,
+    column
+);
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+);
