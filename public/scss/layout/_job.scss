@@ -1,0 +1,92 @@
+@use "../global" as *;
+
+.qh-job {
+    padding-top: 32px;
+
+    &__card {
+        background: var(--gray-500);
+        border-radius: 8px;
+        padding: 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: var(--f-semiBold);
+        color: var(--secondary);
+        transition: all 0.3s linear;
+        margin: 0 0 8px 0;
+        display: inline-block;
+
+        &:hover {
+            transition: all 0.3s linear;
+            color: rgba(from var(--primary) r g b / 0.7);
+        }
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        margin: 0;
+        color: var(--primary);
+        font-weight: var(--f-medium);
+    }
+
+    &__list {
+        margin: 12px 0;
+        padding: 0;
+        display: flex;
+        gap: 12px;
+        display: flex;
+        align-items: center;
+
+        li {
+            list-style: none;
+
+            .icon {
+                width: 20px;
+                height: 20px;
+                transform: translate(0, -2px);
+            }
+        }
+    }
+
+    .apply-btn {
+        color: var(--white);
+        background: var(--primary);
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 4px;
+        transition: all 0.3s linear;
+
+        &:hover {
+            transition: all 0.3s linear;
+            background: rgba(from var(--primary) r g b / 0.9);
+        }
+    }
+
+    .pagination {
+        li {
+            background: var(--gray-500);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+
+        &__number {
+            &-active {
+                color: var(--white);
+                background: var(--primary) !important;
+            }
+        }
+
+        &__disable {
+            background: rgba(from var(--gray-500) r g b / 0.5) !important;
+        }
+    }
+}
