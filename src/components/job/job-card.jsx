@@ -141,7 +141,7 @@ const JobCard = () => {
                       {job.categories && (
                         <div className="mt-2">
                           {job.categories.map((cat, idx) => (
-                            <span key={idx} className="badge bg-secondary me-1">
+                            <span key={idx} className="badge me-1">
                               {cat}
                             </span>
                           ))}

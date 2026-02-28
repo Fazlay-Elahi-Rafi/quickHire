@@ -32,18 +32,61 @@ const useJobFilter = (jobsData) => {
     { label: "Above 60,000", min: 60000, max: Infinity },
   ];
 
+  // Helper function to normalize text for searching
+  const normalizeText = (text) => {
+    if (!text) return "";
+    return (
+      text
+        .toString()
+        .toLowerCase()
+        .replace(/[^\w\s]/g, " ") 
+        .replace(/\s+/g, " ")
+        .trim()
+    );
+  };
+
+  // Helper function to check if search term matches job field
+  const matchesSearch = (job, searchTerm) => {
+    if (!searchTerm) return true;
+
+    const normalizedSearch = normalizeText(searchTerm);
+    if (normalizedSearch === "") return true;
+
+    // Fields to search in
+    const searchableFields = [
+      job.title,
+      job.sub_title,
+      job.description,
+      job.company,
+      job.location,
+      job.tag,
+      ...(job.categories || []),
+    ];
+
+    // Check each field for partial matches
+    return searchableFields.some((field) => {
+      if (!field) return false;
+      const normalizedField = normalizeText(field);
+
+      return (
+        normalizedField.includes(normalizedSearch) ||
+        // Also check individual words for better matching
+        normalizedSearch
+          .split(" ")
+          .every((word) =>
+            word.length > 1 ? normalizedField.includes(word) : true,
+          )
+      );
+    });
+  };
+
   // Filter jobs based on all criteria
   useEffect(() => {
     let filtered = jobsData;
 
-    // Search filter
+    // Search filter 
     if (searchTerm) {
-      filtered = filtered.filter(
-        (job) =>
-          job.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          job.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          job.company.toLowerCase().includes(searchTerm.toLowerCase()),
-      );
+      filtered = filtered.filter((job) => matchesSearch(job, searchTerm));
     }
 
     // Category filter
@@ -68,7 +111,7 @@ const useJobFilter = (jobsData) => {
     if (selectedSalaryRanges.length > 0) {
       filtered = filtered.filter((job) => {
         const salaryStr = job.salary_range || "0";
-        const salaryNum = parseInt(salaryStr.replace(/[^0-9]/g, "")) || 0;
+        const salaryNum = parseInt(salaryStr.replace(/[^\d]/g, "")) || 0;
 
         return selectedSalaryRanges.some((range) => {
           const selectedRange = salaryRanges.find((r) => r.label === range);
@@ -171,7 +214,7 @@ const useJobFilter = (jobsData) => {
     const { min, max } = salaryRanges.find((r) => r.label === range);
     return jobsData.filter((job) => {
       const salaryStr = job.salary_range || "0";
-      const salaryNum = parseInt(salaryStr.replace(/[^0-9]/g, "")) || 0;
+      const salaryNum = parseInt(salaryStr.replace(/[^\d]/g, "")) || 0;
       return salaryNum >= min && salaryNum <= max;
     }).length;
   };
@@ -185,7 +228,7 @@ const useJobFilter = (jobsData) => {
 
   return {
     // State
-    currentPage, // <-- Make sure this is included
+    currentPage,
     filteredJobs,
     searchTerm,
     setSearchTerm,
@@ -194,8 +237,8 @@ const useJobFilter = (jobsData) => {
     selectedSalaryRanges,
 
     // Data
-    allCategories,
-    allExperiences,
+    allCategories, 
+    allExperiences, 
     salaryRanges,
 
     // Pagination
