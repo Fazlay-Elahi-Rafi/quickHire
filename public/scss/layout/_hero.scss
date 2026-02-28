@@ -1,0 +1,37 @@
+@use "../global" as *;
+
+.hero {
+    background: var(--gray-500);
+
+    &__title {
+        font-size: 48px;
+        padding-top: 12px;
+
+        @include screen(md) {
+            padding-top: 12px;
+            font-size: 72px;
+        }
+
+        &-sub {
+            position: relative;
+        }
+    }
+
+    &__text {
+        color: var(--gray-200);
+        padding: 24px 0;
+    }
+
+    &__pattern {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: auto;
+        height: 100%;
+    }
+
+    &__filter {
+        max-width: 852px;
+        background: var(--white);
+    }
+}

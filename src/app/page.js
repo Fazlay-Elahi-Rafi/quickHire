@@ -1,4 +1,5 @@
 
+import Hero from "@/components/hero/hero";
 import React from "react";
 
 export const metadata = {
@@ -10,7 +11,7 @@ export const metadata = {
 const Page = () => {
   return (
     <>
-      <h1>Hello World</h1>
+      <Hero />
     </>
   );
 };
