@@ -11,7 +11,7 @@ const JobCard = () => {
   // Use the custom hook
   const {
     // State
-    currentPage, // <-- Now this will be defined
+    currentPage,
     searchTerm,
     setSearchTerm,
     selectedCategories,
