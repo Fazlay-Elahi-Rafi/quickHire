@@ -1,56 +1,77 @@
 "use client";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 
 import jobsData from "../../data/jobs.json";
+import useJobFilter from "@/hooks/useJobFilter";
+import JobFilter from "./job-filter";
 
 const JobCard = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 5;
+  // Use the custom hook
+  const {
+    // State
+    currentPage, // <-- Now this will be defined
+    searchTerm,
+    setSearchTerm,
+    selectedCategories,
+    selectedExperiences,
+    selectedSalaryRanges,
 
-  // Calculate pagination
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = jobsData.slice(indexOfFirstItem, indexOfLastItem);
+    // Data
+    allCategories,
+    allExperiences,
+    salaryRanges,
 
-  const totalPages = Math.ceil(jobsData.length / itemsPerPage);
+    // Pagination
+    currentItems,
+    totalPages,
+    pageNumbers,
+    indexOfFirstItem,
+    indexOfLastItem,
+    filteredJobs,
 
-  // Generate page numbers
-  const pageNumbers = [];
-  for (let i = 1; i <= totalPages; i++) {
-    pageNumbers.push(i);
-  }
+    // Handlers
+    handleCategoryChange,
+    handleExperienceChange,
+    handleSalaryRangeChange,
+    handleClearFilters,
+    handlePageChange,
+    handlePrevPage,
+    handleNextPage,
 
-  // Handle page change
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
+    // Helper functions
+    getCategoryCount,
+    getExperienceCount,
+    getSalaryRangeCount,
+    showClearButton,
+  } = useJobFilter(jobsData);
+
+  // Handle page change with scroll
+  const onPageChange = (pageNumber) => {
+    handlePageChange(pageNumber);
     window.scrollTo({
       top: document.querySelector(".qh-job")?.offsetTop - 100,
       behavior: "smooth",
     });
   };
 
-  // Handle previous page
-  const handlePrevPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-      window.scrollTo({
-        top: document.querySelector(".qh-job")?.offsetTop - 100,
-        behavior: "smooth",
-      });
-    }
+  // Handle previous page with scroll
+  const onPrevPage = () => {
+    handlePrevPage();
+    window.scrollTo({
+      top: document.querySelector(".qh-job")?.offsetTop - 100,
+      behavior: "smooth",
+    });
   };
 
-  // Handle next page
-  const handleNextPage = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
-      window.scrollTo({
-        top: document.querySelector(".qh-job")?.offsetTop - 100,
-        behavior: "smooth",
-      });
-    }
+  // Handle next page with scroll
+  const onNextPage = () => {
+    handleNextPage();
+    window.scrollTo({
+      top: document.querySelector(".qh-job")?.offsetTop - 100,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -58,16 +79,43 @@ const JobCard = () => {
       <div className="qh-job">
         <div className="container">
           <div className="row">
-            <div className="col-4"></div>
+            <div className="col-4">
+              {/* Job Filter Component */}
+              <JobFilter
+                searchTerm={searchTerm}
+                setSearchTerm={setSearchTerm}
+                allCategories={allCategories}
+                selectedCategories={selectedCategories}
+                handleCategoryChange={handleCategoryChange}
+                getCategoryCount={getCategoryCount}
+                allExperiences={allExperiences}
+                selectedExperiences={selectedExperiences}
+                handleExperienceChange={handleExperienceChange}
+                getExperienceCount={getExperienceCount}
+                salaryRanges={salaryRanges}
+                selectedSalaryRanges={selectedSalaryRanges}
+                handleSalaryRangeChange={handleSalaryRangeChange}
+                getSalaryRangeCount={getSalaryRangeCount}
+                showClearButton={showClearButton}
+                handleClearFilters={handleClearFilters}
+              />
+            </div>
+
             <div className="col-8 mx-auto">
               <div className="">
                 <h3>Open Positions</h3>
               </div>
 
               <p className="text-muted mb-3">
-                Showing {indexOfFirstItem + 1} to{" "}
-                {Math.min(indexOfLastItem, jobsData.length)} of{" "}
-                {jobsData.length} jobs
+                {filteredJobs.length > 0 ? (
+                  <>
+                    Showing {indexOfFirstItem + 1} to{" "}
+                    {Math.min(indexOfLastItem, filteredJobs.length)} of{" "}
+                    {filteredJobs.length} jobs
+                  </>
+                ) : (
+                  "No jobs found"
+                )}
               </p>
 
               {currentItems.map((job, i) => (
@@ -90,6 +138,15 @@ const JobCard = () => {
                         </li>
                       </ul>
                       <p className="mb-0">{job.description}</p>
+                      {job.categories && (
+                        <div className="mt-2">
+                          {job.categories.map((cat, idx) => (
+                            <span key={idx} className="badge bg-secondary me-1">
+                              {cat}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                   <div className="col-2 text-end">
@@ -102,7 +159,9 @@ const JobCard = () => {
 
               {currentItems.length === 0 && (
                 <div className="text-center py-5">
-                  <p>No jobs found.</p>
+                  <p>
+                    No jobs match your filters. Try adjusting your criteria.
+                  </p>
                 </div>
               )}
 
@@ -110,7 +169,7 @@ const JobCard = () => {
                 <ul className="qh-job__list justify-content-center pagination">
                   <li
                     className={`pagination__arrow ${currentPage === 1 ? "pagination__disable" : "pagination__active"}`}
-                    onClick={handlePrevPage}
+                    onClick={onPrevPage}
                     style={{
                       cursor: currentPage === 1 ? "not-allowed" : "pointer",
                     }}
@@ -122,7 +181,7 @@ const JobCard = () => {
                     <li
                       key={number}
                       className={`pagination__number ${currentPage === number ? "pagination__number-active" : ""}`}
-                      onClick={() => handlePageChange(number)}
+                      onClick={() => onPageChange(number)}
                       style={{ cursor: "pointer" }}
                     >
                       {number}
@@ -131,7 +190,7 @@ const JobCard = () => {
 
                   <li
                     className={`pagination__arrow ${currentPage === totalPages ? "pagination__disable" : "pagination__active"}`}
-                    onClick={handleNextPage}
+                    onClick={onNextPage}
                     style={{
                       cursor:
                         currentPage === totalPages ? "not-allowed" : "pointer",
