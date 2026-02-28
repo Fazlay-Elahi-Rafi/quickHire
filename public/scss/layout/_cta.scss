@@ -1,0 +1,69 @@
+@use "../global" as *;
+
+.cta {
+    margin: 72px 0;
+
+    &__wrap {
+        background: var(--primary);
+        padding: 16px 16px 0 16px;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+
+        @include screen(lg) {
+            display: flex;
+            padding: 60px 32px 0 32px;
+        }
+
+        @include screen(xl) {
+            padding: 70px 70px 0 70px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: var(--white);
+            width: 138px;
+            height: 124px;
+            position: absolute;
+            top: -64px;
+            left: -78px;
+            rotate: 43deg;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: var(--white);
+            width: 138px;
+            height: 124px;
+            position: absolute;
+            bottom: -64px;
+            right: -78px;
+            rotate: 43deg;
+        }
+    }
+
+    &__img {
+        position: relative;
+        z-index: 1;
+        margin-top: 26px;
+
+        @include screen(lg) {
+            margin-top: 0px;
+        }
+    }
+
+    &__text {
+        color: var(--white);
+    }
+
+    .qh-heading {
+        color: var(--white);
+        padding: 88px 0 0 0;
+
+        @include screen(lg) {
+            padding: 25px 0 0 0;
+        }
+    }
+}

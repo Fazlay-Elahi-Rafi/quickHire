@@ -1,5 +1,6 @@
 import Brand from "@/components/brand/brand";
 import Category from "@/components/category/category";
+import Cta from "@/components/cta/cta";
 import Hero from "@/components/hero/hero";
 import React from "react";
 
@@ -15,6 +16,7 @@ const Page = () => {
       <Hero />
       <Brand />
       <Category />
+      <Cta />
     </>
   );
 };
