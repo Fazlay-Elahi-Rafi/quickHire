@@ -1,4 +1,4 @@
-
+import Brand from "@/components/brand/brand";
 import Hero from "@/components/hero/hero";
 import React from "react";
 
@@ -12,6 +12,7 @@ const Page = () => {
   return (
     <>
       <Hero />
+      <Brand />
     </>
   );
 };
