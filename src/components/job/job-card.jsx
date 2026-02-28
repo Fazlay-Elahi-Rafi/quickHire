@@ -7,7 +7,16 @@ import jobsData from "../../data/jobs.json";
 import useJobFilter from "@/hooks/useJobFilter";
 import JobFilter from "./job-filter";
 
+import slugify from "slugify";
+
 const JobCard = () => {
+  const generateSlug = (title) => {
+    return slugify(title, {
+      lower: true,
+      strict: true,
+      remove: /[*+~.()'"!:@]/g,
+    });
+  };
   // Use the custom hook
   const {
     // State
@@ -122,7 +131,10 @@ const JobCard = () => {
                 <div className="qh-job__card mb-4" key={indexOfFirstItem + i}>
                   <div className="col-10">
                     <div className="qh-job__card-body">
-                      <Link className="qh-job__title" href="#">
+                      <Link
+                        className="qh-job__title"
+                        href={`/job-details/${generateSlug(job.title)}`}
+                      >
                         {job.title}
                       </Link>
                       <h6 className="qh-job__subtitle">{job.sub_title}</h6>
@@ -150,7 +162,10 @@ const JobCard = () => {
                     </div>
                   </div>
                   <div className="col-2 text-end">
-                    <Link className="apply-btn" href="#">
+                    <Link
+                      className="apply-btn"
+                      href={`/job-details/${generateSlug(job.title)}`}
+                    >
                       Apply Now
                     </Link>
                   </div>
