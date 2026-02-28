@@ -1,0 +1,556 @@
+[
+  {
+    "title": "Frontend Developer (React/Next.js)",
+    "sub_title": "Junior/Associate Software Engineer",
+    "tag": "Engineering",
+    "company": "Qtec Solution Limited",
+    "location": "Dhaka, Bangladesh",
+    "description": "Build dynamic, responsive user interfaces using React.js, Next.js, and Vue.js. Leverage AI tools like GitHub Copilot and ChatGPT to enhance productivity and implement best practices efficiently.",
+    "about_role": "In this role, you will develop modern, responsive web applications using the latest frontend frameworks while utilizing AI-powered development tools to accelerate your workflow. You'll collaborate with our team to build scalable solutions, contributing to both frontend and backend development while continuously learning and growing your skills in an AI-enhanced development environment.",
+    "key_responsibilities": [
+      "Build dynamic, responsive user interfaces using React.js, Next.js, and Vue.js",
+      "Leverage AI tools like GitHub Copilot, ChatGPT, Claude to enhance productivity",
+      "Work with backend technologies including Node.js/Express.js and PHP/Laravel",
+      "Integrate APIs and manage data flow between frontend and backend",
+      "Write clean, maintainable code following industry standards",
+      "Optimize application performance and ensure cross-browser compatibility"
+    ],
+    "required_technical_skills": {
+      "frontend": [
+        "React.js",
+        "Next.js",
+        "Vue.js",
+        "HTML5",
+        "CSS3",
+        "JavaScript (ES6+)"
+      ],
+      "ai_tools": ["GitHub Copilot", "ChatGPT", "Claude", "Cursor"],
+      "backend": ["Node.js/Express.js", "PHP/Laravel"],
+      "version_control": ["Git", "GitHub"]
+    },
+    "database_knowledge": {
+      "nosql": ["MongoDB"],
+      "sql": ["MySQL", "PostgreSQL"],
+      "orms": ["Mongoose", "Eloquent", "Sequelize"]
+    },
+    "development_tools": [
+      "Git/GitHub",
+      "npm/yarn",
+      "Postman/Insomnia",
+      "CI/CD concepts"
+    ],
+    "bonus_skills": [
+      "State management (Redux, Zustand, Pinia)",
+      "Testing frameworks (Jest, Vitex, pytest)",
+      "Docker and containerization",
+      "GraphQL",
+      "JWT/OAuth authentication",
+      "Microservices architecture"
+    ],
+    "benefits": [
+      "Yearly salary review",
+      "Flexible bonus after probation",
+      "Annual company tour",
+      "Continuous learning opportunities",
+      "Collaborative work environment",
+      "Diverse projects with modern tech stack"
+    ],
+    "experience_required": "1-2 years",
+    "salary_range": "Upto BDT 35,000",
+    "min_passing_score": "80/100",
+    "available": 350,
+    "icon": "tabler:code",
+    "categories": ["Engineering", "Technology"]
+  },
+  {
+    "title": "Full Stack Developer (Node.js/PHP)",
+    "sub_title": "Junior/Associate Software Engineer",
+    "tag": "Engineering",
+    "company": "TechSolutions Inc",
+    "location": "Singapore",
+    "description": "Seeking a talented developer with strong frontend skills and backend knowledge to join our innovative team.",
+    "about_role": "Work with cutting-edge frontend technologies while leveraging AI tools to build exceptional user experiences, backed by solid backend knowledge. You'll develop modern web applications and collaborate with cross-functional teams.",
+    "key_responsibilities": [
+      "Develop responsive frontend applications using React and Vue.js",
+      "Build and maintain backend services with Node.js/Express or PHP/Laravel",
+      "Design and optimize database schemas in SQL and NoSQL databases",
+      "Integrate third-party APIs and manage data flow",
+      "Utilize AI tools to accelerate development workflow",
+      "Ensure code quality through testing and code reviews"
+    ],
+    "required_technical_skills": {
+      "frontend": [
+        "React.js",
+        "Next.js",
+        "Vue.js",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      "ai_tools": ["GitHub Copilot", "ChatGPT", "Claude"],
+      "backend": ["Node.js/Express.js", "PHP/Laravel"],
+      "version_control": ["Git", "GitHub"]
+    },
+    "database_knowledge": {
+      "nosql": ["MongoDB"],
+      "sql": ["MySQL", "PostgreSQL"],
+      "orms": ["Mongoose", "Eloquent", "Sequelize", "Django ORM"]
+    },
+    "development_tools": [
+      "Git/GitHub",
+      "npm/yarn/composer",
+      "Postman/Insomnia",
+      "CI/CD pipelines"
+    ],
+    "bonus_skills": [
+      "Redux/Zustand/Pinia",
+      "Jest/pytest",
+      "Docker",
+      "GraphQL",
+      "JWT/OAuth",
+      "Microservices"
+    ],
+    "benefits": [
+      "Yearly salary review",
+      "Flexible bonus after probation",
+      "Annual company tour",
+      "Continuous learning opportunities",
+      "Innovative work environment",
+      "Remote work options"
+    ],
+    "experience_required": "1-2 years",
+    "salary_range": "Upto BDT 40,000",
+    "min_passing_score": "80/100",
+    "available": 280,
+    "icon": "circum:monitor",
+    "categories": ["Engineering", "Technology"]
+  },
+  {
+    "title": "AI-Assisted Frontend Developer",
+    "sub_title": "Junior/Associate Software Engineer",
+    "tag": "Technology",
+    "company": "InnovateAI Labs",
+    "location": "Austin, Texas",
+    "description": "Join our team to build next-generation applications using AI-powered development tools and modern frontend frameworks.",
+    "about_role": "You will develop modern, responsive web applications using the latest frontend frameworks while utilizing AI-powered development tools to accelerate your workflow. You'll collaborate with our team to build scalable solutions in an AI-enhanced development environment.",
+    "key_responsibilities": [
+      "Build dynamic UIs with React.js, Next.js, and Vue.js",
+      "Leverage AI coding assistants to enhance productivity and debug code",
+      "Write effective prompts for AI-assisted development",
+      "Validate and optimize AI-generated code",
+      "Collaborate with designers and backend developers",
+      "Implement responsive designs with CSS frameworks"
+    ],
+    "required_technical_skills": {
+      "frontend": ["React.js", "Next.js", "Vue.js", "HTML5", "CSS3", "ES6+"],
+      "ai_tools": ["GitHub Copilot", "Cursor", "ChatGPT", "Claude"],
+      "backend": ["Node.js/Express.js"],
+      "version_control": ["Git", "GitHub"]
+    },
+    "database_knowledge": {
+      "nosql": ["MongoDB"],
+      "sql": ["PostgreSQL"],
+      "orms": ["Mongoose", "Sequelize"]
+    },
+    "development_tools": ["Git/GitHub", "npm/yarn", "Postman", "Basic CI/CD"],
+    "bonus_skills": [
+      "TypeScript",
+      "Redux/Zustand",
+      "Jest",
+      "Docker",
+      "GraphQL",
+      "JWT"
+    ],
+    "benefits": [
+      "Yearly salary review",
+      "Flexible bonus after probation",
+      "Annual company tour",
+      "Learning stipend",
+      "AI tools subscription",
+      "Hackathons and innovation days"
+    ],
+    "experience_required": "1-2 years",
+    "salary_range": "Upto 45,000",
+    "min_passing_score": "80/100",
+    "available": 180,
+    "icon": "ri:megaphone-line",
+    "categories": ["Technology", "Engineering"]
+  },
+  {
+    "title": "Database-Focused Developer",
+    "sub_title": "Junior/Associate Software Engineer",
+    "tag": "Technology",
+    "company": "DataCore Systems",
+    "location": "Berlin, Germany",
+    "description": "Looking for a developer with strong database skills who can work across SQL and NoSQL technologies.",
+    "about_role": "Work with both SQL and NoSQL databases to design schemas, write queries, and optimize database performance. You'll contribute to full-stack development with a focus on data architecture and management.",
+    "key_responsibilities": [
+      "Design and optimize database schemas in MongoDB and MySQL",
+      "Write efficient queries and manage data flow",
+      "Work with ORMs like Mongoose, Eloquent, and Sequelize",
+      "Integrate databases with frontend applications",
+      "Optimize database performance and ensure data integrity",
+      "Collaborate with backend developers on API design"
+    ],
+    "required_technical_skills": {
+      "frontend": ["React.js", "Basic Vue.js", "JavaScript"],
+      "ai_tools": ["GitHub Copilot", "ChatGPT"],
+      "backend": ["Node.js/Express.js", "PHP/Laravel"],
+      "version_control": ["Git", "GitHub"]
+    },
+    "database_knowledge": {
+      "nosql": ["MongoDB"],
+      "sql": ["MySQL", "PostgreSQL"],
+      "orms": ["Mongoose", "Eloquent", "Sequelize", "Django ORM"]
+    },
+    "development_tools": [
+      "Git/GitHub",
+      "npm/composer",
+      "Postman",
+      "Database GUI tools"
+    ],
+    "bonus_skills": [
+      "Database optimization",
+      "Query performance tuning",
+      "Data migration scripts",
+      "Redis",
+      "Elasticsearch",
+      "Data modeling"
+    ],
+    "benefits": [
+      "Yearly salary review",
+      "Flexible bonus after probation",
+      "Annual company tour",
+      "Database certification sponsorship",
+      "Conference attendance",
+      "Flexible working hours"
+    ],
+    "experience_required": "1-2 years",
+    "salary_range": "Upto 38,000",
+    "min_passing_score": "80/100",
+    "available": 220,
+    "icon": "si:money-duotone",
+    "categories": ["Technology"]
+  },
+  {
+    "title": "UI/UX Engineer with AI Tools",
+    "sub_title": "Junior/Associate Software Engineer",
+    "tag": "Design",
+    "company": "Creative Digital Agency",
+    "location": "London, UK",
+    "description": "Combine design sensibilities with frontend development skills using AI-powered tools.",
+    "about_role": "Create seamless user experiences with modern JavaScript and responsive design. You'll leverage AI tools to accelerate prototyping and implementation while maintaining high design standards.",
+    "key_responsibilities": [
+      "Build responsive user interfaces with HTML5, CSS3, and JavaScript",
+      "Implement designs using Tailwind CSS and Bootstrap",
+      "Use AI tools to generate and refine UI components",
+      "Ensure cross-browser compatibility and performance",
+      "Collaborate with designers on UX improvements",
+      "Write clean, maintainable frontend code"
+    ],
+    "required_technical_skills": {
+      "frontend": [
+        "React.js",
+        "HTML5",
+        "CSS3",
+        "ES6+",
+        "Tailwind CSS",
+        "Bootstrap"
+      ],
+      "ai_tools": ["GitHub Copilot", "ChatGPT", "Claude"],
+      "backend": ["Basic Node.js knowledge"],
+      "version_control": ["Git", "GitHub"]
+    },
+    "database_knowledge": {
+      "nosql": ["MongoDB basics"],
+      "sql": ["MySQL basics"],
+      "orms": ["Basic understanding"]
+    },
+    "development_tools": ["Git/GitHub", "npm/yarn", "Figma", "Postman"],
+    "bonus_skills": [
+      "TypeScript",
+      "Framer Motion",
+      "GSAP",
+      "Jest",
+      "Storybook",
+      "Design Systems"
+    ],
+    "benefits": [
+      "Yearly salary review",
+      "Flexible bonus after probation",
+      "Annual company tour",
+      "Design conference tickets",
+      "Creative workspace",
+      "Wellness programs"
+    ],
+    "experience_required": "1-2 years",
+    "salary_range": "Upto 32,000",
+    "min_passing_score": "80/100",
+    "available": 190,
+    "icon": "lucide:pencil-ruler",
+    "categories": ["Design", "Technology"]
+  },
+  {
+    "title": "TypeScript/React Specialist",
+    "sub_title": "Junior/Associate Software Engineer",
+    "tag": "Engineering",
+    "company": "CodeCraft",
+    "location": "Toronto, Canada",
+    "description": "Seeking a developer with strong TypeScript skills and experience with modern state management.",
+    "about_role": "Write clean, maintainable code using TypeScript and modern ES6+ features. You'll build scalable applications with state management tools and collaborate on full-stack features.",
+    "key_responsibilities": [
+      "Develop applications with React.js and TypeScript",
+      "Implement state management with Redux, Zustand, or Pinia",
+      "Write clean, maintainable code following industry standards",
+      "Integrate with backend APIs",
+      "Optimize application performance",
+      "Collaborate with cross-functional teams"
+    ],
+    "required_technical_skills": {
+      "frontend": ["React.js", "Next.js", "TypeScript", "ES6+"],
+      "ai_tools": ["GitHub Copilot", "Cursor"],
+      "backend": ["Node.js/Express.js"],
+      "version_control": ["Git", "GitHub"]
+    },
+    "database_knowledge": {
+      "nosql": ["MongoDB"],
+      "sql": ["PostgreSQL"],
+      "orms": ["Mongoose", "Sequelize"]
+    },
+    "development_tools": ["Git/GitHub", "npm/yarn", "Postman", "VS Code"],
+    "bonus_skills": [
+      "Vue.js",
+      "Redux Toolkit",
+      "Zustand",
+      "Jest",
+      "React Testing Library",
+      "GraphQL"
+    ],
+    "benefits": [
+      "Yearly salary review",
+      "Flexible bonus after probation",
+      "Annual company tour",
+      "Learning budget",
+      "Remote work options",
+      "Home office stipend"
+    ],
+    "experience_required": "1-2 years",
+    "salary_range": "Upto 50,000",
+    "min_passing_score": "80/100",
+    "available": 270,
+    "icon": "tabler:code",
+    "categories": ["Engineering"]
+  },
+  {
+    "title": "API Integration Developer",
+    "sub_title": "Junior/Associate Software Engineer",
+    "tag": "Technology",
+    "company": "ConnectHub",
+    "location": "Sydney, Australia",
+    "description": "Specialize in building and consuming APIs with modern authentication methods.",
+    "about_role": "Build and consume RESTful APIs, work with authentication methods including JWT and OAuth. You'll integrate frontend applications with backend services and third-party APIs.",
+    "key_responsibilities": [
+      "Build and consume RESTful APIs",
+      "Implement authentication with JWT and OAuth",
+      "Work with API testing tools like Postman and Insomnia",
+      "Integrate frontend applications with backend services",
+      "Document API specifications",
+      "Optimize API performance and data flow"
+    ],
+    "required_technical_skills": {
+      "frontend": ["React.js", "JavaScript"],
+      "ai_tools": ["ChatGPT", "Claude"],
+      "backend": ["Node.js/Express.js", "PHP/Laravel"],
+      "version_control": ["Git", "GitHub"]
+    },
+    "database_knowledge": {
+      "nosql": ["MongoDB"],
+      "sql": ["MySQL"],
+      "orms": ["Mongoose", "Eloquent"]
+    },
+    "development_tools": ["Git/GitHub", "Postman", "Insomnia", "Swagger"],
+    "bonus_skills": [
+      "GraphQL",
+      "WebSockets",
+      "API security",
+      "Rate limiting",
+      "API versioning",
+      "Microservices"
+    ],
+    "benefits": [
+      "Yearly salary review",
+      "Flexible bonus after probation",
+      "Annual company tour",
+      "API certification",
+      "Conference attendance",
+      "Flexible hours"
+    ],
+    "experience_required": "1-2 years",
+    "salary_range": "Upto 55,000",
+    "min_passing_score": "80/100",
+    "available": 160,
+    "icon": "lets-icons:group",
+    "categories": ["Technology"]
+  },
+  {
+    "title": "DevOps-Ready Developer",
+    "sub_title": "Junior/Associate Software Engineer",
+    "tag": "Engineering",
+    "company": "CloudNative Inc",
+    "location": "Seattle, US",
+    "description": "Developer with basic DevOps understanding and containerization experience.",
+    "about_role": "Work with version control, CI/CD concepts, and containerization. You'll bridge the gap between development and operations while building full-stack applications.",
+    "key_responsibilities": [
+      "Use version control with Git/GitHub",
+      "Understand CI/CD concepts and pipelines",
+      "Work with Docker for containerization",
+      "Manage packages with npm, yarn, composer",
+      "Deploy and monitor applications",
+      "Collaborate on infrastructure decisions"
+    ],
+    "required_technical_skills": {
+      "frontend": ["React.js", "JavaScript"],
+      "ai_tools": ["GitHub Copilot"],
+      "backend": ["Node.js/Express.js"],
+      "version_control": ["Git", "GitHub", "CI/CD"]
+    },
+    "database_knowledge": {
+      "nosql": ["MongoDB"],
+      "sql": ["PostgreSQL"],
+      "orms": ["Mongoose"]
+    },
+    "development_tools": [
+      "Git/GitHub",
+      "Docker",
+      "Jenkins",
+      "npm/yarn",
+      "AWS basics"
+    ],
+    "bonus_skills": [
+      "Kubernetes",
+      "Terraform",
+      "AWS/Azure/GCP",
+      "Monitoring tools",
+      "Logging",
+      "Infrastructure as Code"
+    ],
+    "benefits": [
+      "Yearly salary review",
+      "Flexible bonus after probation",
+      "Annual company tour",
+      "DevOps certification",
+      "Cloud credits",
+      "Home internet stipend"
+    ],
+    "experience_required": "1-2 years",
+    "salary_range": "Upto 65,000",
+    "min_passing_score": "80/100",
+    "available": 310,
+    "icon": "circum:monitor",
+    "categories": ["Engineering", "Technology"]
+  },
+  {
+    "title": "GraphQL Developer",
+    "sub_title": "Junior/Associate Software Engineer",
+    "tag": "Technology",
+    "company": "API First",
+    "location": "Amsterdam, Netherlands",
+    "description": "Work with modern API technologies including GraphQL and microservices.",
+    "about_role": "Experience with GraphQL and microservices architecture. Knowledge of testing frameworks for ensuring code quality. You'll build efficient APIs and frontend integrations.",
+    "key_responsibilities": [
+      "Design and implement GraphQL APIs",
+      "Work with microservices architecture",
+      "Write tests with Jest and pytest",
+      "Integrate GraphQL with frontend applications",
+      "Optimize query performance",
+      "Document API schemas"
+    ],
+    "required_technical_skills": {
+      "frontend": ["React.js", "Apollo Client"],
+      "ai_tools": ["ChatGPT", "Claude"],
+      "backend": ["Node.js/Express.js", "GraphQL"],
+      "version_control": ["Git", "GitHub"]
+    },
+    "database_knowledge": {
+      "nosql": ["MongoDB"],
+      "sql": ["PostgreSQL"],
+      "orms": ["Mongoose", "Prisma"]
+    },
+    "development_tools": [
+      "Git/GitHub",
+      "GraphQL Playground",
+      "Postman",
+      "npm/yarn"
+    ],
+    "bonus_skills": [
+      "Apollo Server",
+      "Relay",
+      "Hasura",
+      "DataLoader",
+      "Federation",
+      "Subscriptions"
+    ],
+    "benefits": [
+      "Yearly salary review",
+      "Flexible bonus after probation",
+      "Annual company tour",
+      "GraphQL conference",
+      "Learning stipend",
+      "Relocation assistance"
+    ],
+    "experience_required": "1-2 years",
+    "salary_range": "Upto 45,000",
+    "min_passing_score": "80/100",
+    "available": 230,
+    "icon": "tabler:briefcase",
+    "categories": ["Technology"]
+  },
+  {
+    "title": "MERN Stack Developer",
+    "sub_title": "Junior/Associate Software Engineer",
+    "tag": "Engineering",
+    "company": "StackBlitz",
+    "location": "Bangalore, India",
+    "description": "Full-stack development with MongoDB, Express.js, React, and Node.js.",
+    "about_role": "Full-stack development with MongoDB, Express.js, React, and Node.js. Experience with Mongoose ODM and modern state management solutions required. You'll build end-to-end features.",
+    "key_responsibilities": [
+      "Build full-stack applications with MERN stack",
+      "Design MongoDB schemas with Mongoose",
+      "Implement state management with Redux/Zustand",
+      "Create RESTful APIs with Express.js",
+      "Develop responsive UIs with React",
+      "Optimize application performance"
+    ],
+    "required_technical_skills": {
+      "frontend": ["React.js", "Redux", "Next.js"],
+      "ai_tools": ["GitHub Copilot", "ChatGPT"],
+      "backend": ["Node.js/Express.js"],
+      "version_control": ["Git", "GitHub"]
+    },
+    "database_knowledge": {
+      "nosql": ["MongoDB"],
+      "sql": ["MySQL basics"],
+      "orms": ["Mongoose"]
+    },
+    "development_tools": [
+      "Git/GitHub",
+      "npm/yarn",
+      "Postman",
+      "MongoDB Compass"
+    ],
+    "bonus_skills": ["TypeScript", "Jest", "Docker", "GraphQL", "AWS", "Redis"],
+    "benefits": [
+      "Yearly salary review",
+      "Flexible bonus after probation",
+      "Annual company tour",
+      "Learning platform access",
+      "Health insurance",
+      "Meal vouchers"
+    ],
+    "experience_required": "1-2 years",
+    "salary_range": "Upto 4,50,000",
+    "min_passing_score": "80/100",
+    "available": 420,
+    "icon": "si:money-duotone",
+    "categories": ["Engineering"]
+  }
+]

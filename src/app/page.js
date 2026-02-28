@@ -1,4 +1,5 @@
 import Brand from "@/components/brand/brand";
+import Category from "@/components/category/category";
 import Hero from "@/components/hero/hero";
 import React from "react";
 
@@ -13,6 +14,7 @@ const Page = () => {
     <>
       <Hero />
       <Brand />
+      <Category />
     </>
   );
 };

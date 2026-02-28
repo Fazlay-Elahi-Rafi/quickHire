@@ -1,0 +1,121 @@
+@use "../global" as *;
+
+.category {
+    padding-top: 72px;
+
+    .qh-heading {
+        margin-bottom: 24px;
+
+        @include screen(sm) {
+            margin-bottom: 0;
+        }
+    }
+
+    .qh-link {
+        margin-top: 24px;
+
+        @include screen(sm) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+        margin-top: 0px;
+
+        @include screen(sm) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 48px;
+        }
+
+        @include screen(md) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        @include screen(lg) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__box {
+        border: 1px solid var(--gray-300);
+        padding: 16px;
+        transition: all 0.3s linear;
+        border-radius: 4px;
+        display: flex;
+        gap: 32px;
+        align-items: center;
+
+        @include screen(sm) {
+            display: block;
+        }
+
+        @include screen(xl) {
+            padding: 32px;
+        }
+
+        &:hover {
+            background: var(--primary);
+            transition: all 0.3s linear;
+
+            .category__name {
+                transition: all 0.3s linear;
+                color: var(--white);
+            }
+
+            .category__icon {
+                transition: all 0.3s linear;
+                color: var(--white);
+            }
+
+            .category__link {
+                transition: all 0.3s linear;
+                color: var(--white);
+
+                &-icon {
+                    transition: all 0.3s linear;
+                    color: var(--white);
+                }
+            }
+        }
+    }
+
+    &__name {
+        font-weight: var(--f-semiBold);
+        color: var(--secondary);
+        margin: 0;
+
+        @include screen(sm) {
+            padding: 32px 0 12px 0;
+        }
+    }
+
+    &__icon {
+        color: var(--primary);
+        width: 40px;
+        height: 40px;
+
+        @include screen(sm) {
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: var(--gray-400);
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+            color: var(--secondary);
+        }
+    }
+}
