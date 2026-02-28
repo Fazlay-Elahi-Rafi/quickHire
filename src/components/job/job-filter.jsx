@@ -24,7 +24,7 @@ const JobFilter = ({
     <div className="qh-job__filter">
       {/* Search Section */}
       <div className="qh-job__filter-search mb-3">
-        <h5 className="qh-job__filter-text">Search</h5>
+        <h5 className="qh-job__filter-text">Filter Jobs</h5>
         <form
           className="qh-job__filter-search--form"
           onSubmit={(e) => e.preventDefault()}

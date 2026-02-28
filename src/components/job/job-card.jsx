@@ -88,7 +88,7 @@ const JobCard = () => {
       <div className="qh-job">
         <div className="container">
           <div className="row">
-            <div className="col-4">
+            <div className="col-lg-4 mb-3 mb-lg-0">
               {/* Job Filter Component */}
               <JobFilter
                 searchTerm={searchTerm}
@@ -110,7 +110,7 @@ const JobCard = () => {
               />
             </div>
 
-            <div className="col-8 mx-auto">
+            <div className="col-lg-8 mx-auto">
               <div className="">
                 <h3>Open Positions</h3>
               </div>
@@ -129,7 +129,7 @@ const JobCard = () => {
 
               {currentItems.map((job, i) => (
                 <div className="qh-job__card mb-4" key={indexOfFirstItem + i}>
-                  <div className="col-10">
+                  <div className="col-md-9 col-xl-10">
                     <div className="qh-job__card-body">
                       <Link
                         className="qh-job__title"
@@ -161,7 +161,7 @@ const JobCard = () => {
                       )}
                     </div>
                   </div>
-                  <div className="col-2 text-end">
+                  <div className="col-md-3 col-xl-2 text-end mt-3 mt-md-0">
                     <Link
                       className="apply-btn"
                       href={`/job-details/${generateSlug(job.title)}`}

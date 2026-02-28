@@ -8,7 +8,11 @@
         border-radius: 8px;
         padding: 24px;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include screen(md) {
+            justify-content: space-between;
+        }
     }
 
     &__title {
@@ -167,8 +171,11 @@
     }
 
     .badge {
-        background: var(--gray-100);
-        border-radius: 4px;
+        background: rgba(70, 64, 222, 0.1);
+        color: var(--primary);
         padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: var(--f-medium);
     }
 }

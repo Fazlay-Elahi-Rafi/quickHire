@@ -1,0 +1,266 @@
+@use "../global" as *;
+
+.job-application-form {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    @include screen(lg) {
+        padding: 32px;
+    }
+
+    .application-form {
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--gray-300);
+        }
+
+        &__title {
+            color: var(--dark);
+            font-size: var(--h4);
+            font-weight: var(--f-bold);
+            margin: 0;
+        }
+
+        &__close {
+            background: none;
+            border: none;
+            color: var(--gray-400);
+            font-size: 24px;
+            cursor: pointer;
+            padding: 4px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: var(--gray-500);
+                color: var(--primary);
+            }
+        }
+
+        &__field {
+            margin-bottom: 24px;
+
+            .field-label {
+                display: block;
+                color: var(--dark);
+                font-size: var(--p);
+                font-weight: var(--f-medium);
+                margin-bottom: 8px;
+
+                .required {
+                    color: tomato;
+                    margin-left: 4px;
+                }
+            }
+
+            .field-input,
+            .field-select {
+                width: 100%;
+                padding: 12px 16px;
+                border: 2px solid var(--gray-300);
+                border-radius: 8px;
+                font-size: var(--p);
+                color: var(--dark);
+                background: var(--white);
+                transition: all 0.3s ease;
+
+                &::placeholder {
+                    color: var(--gray-400);
+                }
+
+                &:focus {
+                    outline: none;
+                    border-color: var(--primary);
+                    box-shadow: none;
+                }
+
+                &:hover {
+                    border-color: var(--primary);
+                }
+            }
+
+            .field-select {
+                cursor: pointer;
+                appearance: none;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23515B6F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: right 16px center;
+                background-size: 16px;
+            }
+        }
+    }
+
+    .core-experience {
+        &__select {
+            position: relative;
+        }
+    }
+
+    .selected-experiences {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+
+        .selected-exp-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(70, 64, 222, 0.1);
+            color: var(--primary);
+            padding: 6px 12px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: var(--f-medium);
+
+            .remove-icon {
+                cursor: pointer;
+                font-size: 16px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: var(--dark);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .file-upload {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+
+        &__button {
+            background: var(--gray-500);
+            color: var(--dark);
+            border: 2px solid var(--gray-300);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: var(--p);
+            font-weight: var(--f-medium);
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: var(--primary);
+                color: var(--white);
+                border-color: var(--primary);
+            }
+        }
+
+        &__name {
+            color: var(--gray-400);
+            font-size: var(--p);
+        }
+
+        &__hint {
+            color: var(--gray-400);
+            font-size: 14px;
+            margin-top: 8px;
+            font-style: italic;
+        }
+    }
+
+    .application-form__next-steps {
+        background: var(--gray-500);
+        padding: 24px;
+        border-radius: 12px;
+        margin: 32px 0;
+
+        .next-steps {
+            &__title {
+                color: var(--dark);
+                font-size: var(--h5);
+                font-weight: var(--f-semiBold);
+                margin-bottom: 16px;
+            }
+
+            &__list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        .next-step__item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: var(--gray-200);
+            font-size: var(--p);
+            flex-wrap: wrap;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .step-icon {
+                color: var(--primary);
+                font-size: 20px;
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    .application-form__submit {
+        width: 100%;
+        background: var(--primary);
+        color: var(--white);
+        border: none;
+        padding: 16px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: var(--f-medium);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        @include screen(md) {
+            font-size: var(--h6);
+        }
+
+        &:hover {
+            background: darken(#4640DE, 10%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(70, 64, 222, 0.3);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+}
+
+// Modal overlay (if you want to use it as a modal)
+.application-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+    overflow-y: auto;
+
+    .job-application-form {
+        width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+}

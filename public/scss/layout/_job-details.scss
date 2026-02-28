@@ -1,0 +1,364 @@
+@use "../global" as *;
+
+
+.job-details-page {
+    padding: 40px 0;
+    min-height: 100vh;
+
+    @include screen(lg) {
+        padding: 20px 0;
+    }
+
+    .job-details {
+        &__breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: var(--p);
+            flex-wrap: wrap;
+
+            &-link {
+                color: var(--gray-200);
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+
+            &-icon {
+                color: var(--gray-400);
+                font-size: 12px;
+            }
+
+            &-current {
+                color: var(--dark);
+                font-weight: var(--f-medium);
+            }
+        }
+
+        &__header {
+            background: var(--white);
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+            @include screen(md) {
+                padding: 32px !important;
+            }
+
+
+            &-title {
+                color: var(--dark);
+                font-size: 18px;
+                font-weight: var(--f-bold);
+                margin-bottom: 8px;
+
+                @include screen(md) {
+                    font-size: var(--h3);
+                }
+            }
+
+            &-subtitle {
+                color: var(--primary);
+                font-size: 16px;
+                font-weight: var(--f-medium);
+                margin-bottom: 20px;
+
+                @include screen(md) {
+                    font-size: var(--h5);
+                }
+            }
+
+            &-meta {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                padding-top: 20px;
+                border-top: 1px solid var(--gray-300);
+
+                @include screen(md) {
+                    gap: 12px !important;
+                }
+
+
+                .meta-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    color: var(--gray-200);
+                    font-size: var(--p);
+                    width: 100%;
+
+                    @include screen(md) {
+                        width: auto;
+                    }
+
+                    .meta-icon {
+                        color: var(--primary);
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        &__section {
+            background: var(--white);
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+            @include screen(md) {
+                padding: 20px !important;
+            }
+
+            &-title {
+                color: var(--dark);
+                font-size: var(--h5);
+                font-weight: var(--f-semiBold);
+                margin-bottom: 20px;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -8px;
+                    width: 50px;
+                    height: 3px;
+                    background: var(--primary);
+                    border-radius: 2px;
+                }
+            }
+
+            &-content {
+                color: var(--gray-200);
+                font-size: var(--p);
+                line-height: 1.6;
+                margin-bottom: 0;
+            }
+        }
+
+        &__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            .list-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 12px;
+                margin-bottom: 12px;
+                color: var(--gray-200);
+                font-size: var(--p);
+                line-height: 1.6;
+
+                .list-icon {
+                    color: var(--primary);
+                    font-size: 18px;
+                    flex-shrink: 0;
+                    margin-top: 3px;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__sidebar {
+            position: sticky;
+            top: 20px;
+
+            .sidebar-card {
+                background: var(--white);
+                padding: 24px;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+                .company-info {
+                    text-align: center;
+
+                    .company-icon {
+                        width: 80px;
+                        height: 80px;
+                        margin: 0 auto;
+                        background: var(--gray-500);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: var(--primary);
+                    }
+
+                    .company-name {
+                        color: var(--dark);
+                        font-size: var(--h5);
+                        font-weight: var(--f-semiBold);
+                        margin-bottom: 8px;
+                    }
+
+                    .company-location {
+                        color: var(--gray-200);
+                        font-size: var(--p);
+                        margin-bottom: 16px;
+                    }
+
+                    .company-meta {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        justify-content: center;
+
+                        .badge-custom {
+                            background: var(--gray-500);
+                            color: var(--dark);
+                            padding: 6px 12px;
+                            border-radius: 20px;
+                            font-size: 13px;
+                            display: inline-flex;
+                            align-items: center;
+                            gap: 6px;
+                        }
+                    }
+                }
+            }
+
+            .sidebar-title {
+                color: var(--dark);
+                font-size: var(--h6);
+                font-weight: var(--f-semiBold);
+                margin-bottom: 16px;
+            }
+
+            .categories-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+
+                .category-tag {
+                    background: rgba(70, 64, 222, 0.1);
+                    color: var(--primary);
+                    padding: 4px 12px;
+                    border-radius: 20px;
+                    font-size: 12px;
+                    font-weight: var(--f-medium);
+                }
+            }
+
+            .apply-btn {
+                background: var(--primary);
+                color: var(--white);
+                border: none;
+                padding: 14px;
+                border-radius: 8px;
+                font-size: var(--p);
+                font-weight: var(--f-medium);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background: darken(#4640DE, 10%);
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 16px rgba(70, 64, 222, 0.3);
+                }
+            }
+
+            .save-btn {
+                background: var(--white);
+                color: var(--primary);
+                border: 2px solid var(--primary);
+                padding: 12px;
+                border-radius: 8px;
+                font-size: var(--p);
+                font-weight: var(--f-medium);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background: rgba(70, 64, 222, 0.05);
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+
+    .skills-group {
+        &__title {
+            color: var(--dark);
+            font-size: var(--p);
+            font-weight: var(--f-medium);
+            margin-bottom: 12px;
+
+            .title-badge {
+                background: var(--primary);
+                color: var(--white);
+                padding: 8px 12px;
+                border-radius: 20px;
+                font-size: 12px;
+                font-weight: var(--f-medium);
+            }
+        }
+    }
+
+    .skills-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .skill-tag {
+            background: var(--gray-500);
+            color: var(--dark);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: var(--f-regular);
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: var(--primary);
+                color: var(--white);
+                transform: translateY(-2px);
+            }
+
+            &--bonus {
+                background: rgba(38, 164, 255, 0.1);
+                color: var(--info);
+
+                &:hover {
+                    background: var(--info);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+
+    .qualification-item {
+        .qualification-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--dark);
+            font-size: var(--p);
+            font-weight: var(--f-medium);
+            margin-bottom: 8px;
+
+            .qualification-icon {
+                color: var(--primary);
+                font-size: 18px;
+            }
+        }
+
+        .qualification-text {
+            color: var(--gray-200);
+            font-size: var(--p);
+            line-height: 1.6;
+            margin-left: 26px;
+        }
+    }
+}
