@@ -258,72 +258,85 @@ const JobDetails = ({ jobId }) => {
             )}
 
             {/* Qualifications and Soft Skills */}
-            <div className="job-details__section mb-4">
-              <h3 className="job-details__section-title">
-                Qualifications and Soft Skills
-              </h3>
+            {matchedJob.qualifications && (
+              <div className="job-details__section mb-4">
+                <h3 className="job-details__section-title">
+                  Qualifications and Soft Skills
+                </h3>
 
-              <div className="qualification-item mb-3">
-                <h4 className="qualification-title">
-                  <Icon icon="tabler:school" className="qualification-icon" />
-                  Education
-                </h4>
-                <p className="qualification-text">
-                  Bachelor's degree in Computer Science, Software Engineering,
-                  or related field from a recognized university/institution.
-                </p>
-              </div>
+                {matchedJob.qualifications.education && (
+                  <div className="qualification-item mb-3">
+                    <h4 className="qualification-title">
+                      <Icon
+                        icon="tabler:school"
+                        className="qualification-icon"
+                      />
+                      Education
+                    </h4>
+                    <p className="qualification-text">
+                      {matchedJob.qualifications.education}
+                    </p>
+                  </div>
+                )}
 
-              <div className="qualification-item mb-3">
-                <h4 className="qualification-title">
-                  <Icon
-                    icon="tabler:briefcase"
-                    className="qualification-icon"
-                  />
-                  Experience
-                </h4>
-                <p className="qualification-text">
-                  {matchedJob.experience_required} of professional experience or
-                  relevant project portfolio demonstrating frontend development
-                  skills.
-                </p>
-              </div>
+                {matchedJob.qualifications.experience && (
+                  <div className="qualification-item mb-3">
+                    <h4 className="qualification-title">
+                      <Icon
+                        icon="tabler:briefcase"
+                        className="qualification-icon"
+                      />
+                      Experience
+                    </h4>
+                    <p className="qualification-text">
+                      {matchedJob.qualifications.experience}
+                    </p>
+                  </div>
+                )}
 
-              <div className="qualification-item mb-3">
-                <h4 className="qualification-title">
-                  <Icon icon="tabler:bulb" className="qualification-icon" />
-                  Problem-Solving
-                </h4>
-                <p className="qualification-text">
-                  Strong analytical and debugging skills with attention to
-                  detail. We value developers who think critically and ask the
-                  right questions.
-                </p>
-              </div>
+                {matchedJob.qualifications.problem_solving && (
+                  <div className="qualification-item mb-3">
+                    <h4 className="qualification-title">
+                      <Icon icon="tabler:bulb" className="qualification-icon" />
+                      Problem-Solving
+                    </h4>
+                    <p className="qualification-text">
+                      {matchedJob.qualifications.problem_solving}
+                    </p>
+                  </div>
+                )}
 
-              <div className="qualification-item mb-3">
-                <h4 className="qualification-title">
-                  <Icon icon="tabler:brain" className="qualification-icon" />
-                  Learning Mindset
-                </h4>
-                <p className="qualification-text">
-                  Passion for staying updated with latest web technologies and
-                  AI development tools. Self-motivated to learn and adapt
-                  quickly.
-                </p>
-              </div>
+                {matchedJob.qualifications.learning_mindset && (
+                  <div className="qualification-item mb-3">
+                    <h4 className="qualification-title">
+                      <Icon
+                        icon="tabler:brain"
+                        className="qualification-icon"
+                      />
+                      Learning Mindset
+                    </h4>
+                    <p className="qualification-text">
+                      {matchedJob.qualifications.learning_mindset}
+                    </p>
+                  </div>
+                )}
 
-              <div className="qualification-item mb-3">
-                <h4 className="qualification-title">
-                  <Icon icon="tabler:messages" className="qualification-icon" />
-                  Communication
-                </h4>
-                <p className="qualification-text">
-                  Good command of English (both written and verbal) to
-                  collaborate effectively with team members and document code.
-                </p>
+                {matchedJob.qualifications.communication && (
+                  <div className="qualification-item mb-3">
+                    <h4 className="qualification-title">
+                      <Icon
+                        icon="tabler:messages"
+                        className="qualification-icon"
+                      />
+                      Communication
+                    </h4>
+                    <p className="qualification-text">
+                      {matchedJob.qualifications.communication}
+                    </p>
+                  </div>
+                )}
               </div>
-            </div>
+            )}
 
             {/* Benefits */}
             <div className="job-details__section mb-4">

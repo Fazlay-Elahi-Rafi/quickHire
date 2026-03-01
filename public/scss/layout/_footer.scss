@@ -1,0 +1,150 @@
+@use "../global" as *;
+
+.qh-footer {
+    background: var(--dark);
+    margin-top: 60px;
+
+    &__wrap {
+        padding: 40px 16px 24px 16px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include screen(md) {
+            padding: 64px 0 80px 0;
+        }
+    }
+
+    &__para {
+        font-size: 16px;
+        color: var(--gray-300);
+        margin: 32px 0 0 0;
+
+        &--mt {
+            margin: 18px 0 0 0;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        color: var(--white);
+        font-weight: var(--f-semiBold);
+        margin: 0 0 18px 0;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            padding: 0 0 16px 0;
+
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                transition: all 0.3s linear;
+                color: var(--gray-300);
+
+                &:hover {
+                    transition: all 0.3s linear;
+                    color: var(--primary);
+                }
+            }
+        }
+
+        &--social {
+            display: flex;
+            gap: 24px;
+
+            li {
+                padding: 0;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                background: #363944;
+                border-radius: 100%;
+                transition: all 0.3s linear;
+
+                &:hover {
+                    transition: all 0.3s linear;
+                    background: var(--primary);
+
+                    .icon {
+                        transition: all 0.3s linear;
+                        color: var(--white);
+                    }
+                }
+
+                .icon {
+                    transition: all 0.3s linear;
+                }
+            }
+        }
+    }
+
+    &__form {
+        margin-top: 16px;
+
+        @include screen(md) {
+            margin-top: 40px;
+        }
+
+        input {
+            padding: 12px 16px;
+            width: 100%;
+            border: 1px solid transparent;
+            outline: 0;
+
+            @include screen(md) {
+                max-width: 223px;
+            }
+        }
+
+        .qh-btn-primary {
+            margin: 8px 0 0 0px;
+            border: 1px solid transparent;
+            color: var(--white);
+            font-weight: var(--f-bold);
+            background: var(--primary);
+            border-radius: 0;
+            min-height: 50px;
+            padding: 12px 24px;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s linear;
+
+            @include screen(md) {
+                margin: 0 0 0 8px;
+            }
+
+            &:hover {
+                transition: all 0.3s linear;
+                background: rgba(from var(--primary) r g b / 0.9);
+            }
+        }
+    }
+
+    &__bottom {
+        padding: 24px 0 40px 0;
+        border-top: 2px solid #363944;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        @include screen(md) {
+            gap: 0px;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            padding: 42px 0;
+        }
+    }
+}

@@ -26,7 +26,7 @@ const Navbar = ({ navBgColor }) => {
                 </div>
                 <ul className="qh-navbar__list d-none d-md-flex">
                   <li>
-                    <Link href="#">Find Jobs</Link>
+                    <Link href="/all-jobs">Find Jobs</Link>
                   </li>
                   <li>
                     <Link href="#">Browse Companies</Link>

@@ -62,7 +62,14 @@
     "icon": "tabler:code",
     "categories": ["Engineering", "Technology"],
     "job_type": "Full-time",
-    "workplace": "Hybrid"
+    "workplace": "Hybrid",
+    "qualifications": {
+      "education": "Bachelor's degree in Computer Science, Software Engineering, or related field from a recognized university/institution.",
+      "experience": "0-1 years of professional experience or relevant project portfolio demonstrating frontend development skills.",
+      "problem_solving": "Strong analytical and debugging skills with attention to detail. We value developers who think critically and ask the right questions.",
+      "learning_mindset": "Passion for staying updated with latest web technologies and AI development tools. Self-motivated to learn and adapt quickly.",
+      "communication": "Good command of English (both written and verbal) to collaborate effectively with team members and document code."
+    }
   },
   {
     "title": "Full Stack Developer (Node.js/PHP)",
@@ -126,7 +133,14 @@
     "icon": "circum:monitor",
     "categories": ["Engineering", "Technology"],
     "job_type": "Full-time",
-    "workplace": "Remote"
+    "workplace": "Remote",
+    "qualifications": {
+      "education": "Bachelor's degree in Computer Science, Software Engineering, or related field from a recognized university/institution.",
+      "experience": "2-3 years of professional experience in full-stack development with strong frontend and backend skills.",
+      "problem_solving": "Excellent problem-solving abilities with experience in debugging complex applications and optimizing performance.",
+      "learning_mindset": "Demonstrated ability to learn new technologies quickly and adapt to changing requirements.",
+      "communication": "Strong verbal and written communication skills in English, ability to work in a distributed team environment."
+    }
   },
   {
     "title": "AI-Assisted Frontend Developer",
@@ -179,7 +193,14 @@
     "icon": "ri:megaphone-line",
     "categories": ["Technology", "Engineering"],
     "job_type": "Full-time",
-    "workplace": "On-site"
+    "workplace": "On-site",
+    "qualifications": {
+      "education": "Bachelor's degree in Computer Science, Software Engineering, or related field.",
+      "experience": "3-4 years of experience in frontend development with strong AI tool adoption.",
+      "problem_solving": "Creative problem-solver with experience in optimizing AI-generated code and debugging complex UI issues.",
+      "learning_mindset": "Passionate about AI-assisted development and staying at the forefront of technology trends.",
+      "communication": "Excellent communication skills with ability to explain technical concepts to non-technical stakeholders."
+    }
   },
   {
     "title": "Database-Focused Developer",
@@ -237,7 +258,14 @@
     "icon": "si:money-duotone",
     "categories": ["Technology"],
     "job_type": "Contract",
-    "workplace": "Hybrid"
+    "workplace": "Hybrid",
+    "qualifications": {
+      "education": "Master's or Bachelor's degree in Computer Science, Data Engineering, or related field.",
+      "experience": "4-5 years of experience with database design, optimization, and management across SQL and NoSQL platforms.",
+      "problem_solving": "Strong analytical skills with expertise in query optimization, performance tuning, and data modeling.",
+      "learning_mindset": "Continuous learner keeping up with database technologies, new query optimization techniques, and data architecture patterns.",
+      "communication": "Excellent documentation skills and ability to communicate complex database concepts to development teams."
+    }
   },
   {
     "title": "UI/UX Engineer with AI Tools",
@@ -297,7 +325,14 @@
     "icon": "lucide:pencil-ruler",
     "categories": ["Design", "Technology"],
     "job_type": "Full-time",
-    "workplace": "Remote"
+    "workplace": "Remote",
+    "qualifications": {
+      "education": "Bachelor's degree in Design, Human-Computer Interaction, Computer Science, or related field.",
+      "experience": "1-2 years of experience in UI/UX design and frontend development.",
+      "problem_solving": "Creative problem-solver with strong attention to detail and user-centered design thinking.",
+      "learning_mindset": "Passionate about design trends, AI tools for design, and modern frontend technologies.",
+      "communication": "Strong portfolio presentation skills and ability to articulate design decisions to stakeholders."
+    }
   },
   {
     "title": "TypeScript/React Specialist",
@@ -350,7 +385,14 @@
     "icon": "tabler:code",
     "categories": ["Engineering"],
     "job_type": "Full-time",
-    "workplace": "Hybrid"
+    "workplace": "Hybrid",
+    "qualifications": {
+      "education": "Bachelor's or Master's degree in Computer Science or related field.",
+      "experience": "5-7 years of experience in frontend development with strong TypeScript expertise.",
+      "problem_solving": "Exceptional problem-solving skills with experience in architecting scalable frontend solutions.",
+      "learning_mindset": "Thought leader in frontend technologies, actively contributing to the developer community.",
+      "communication": "Excellent mentorship skills and ability to lead technical discussions and code reviews."
+    }
   },
   {
     "title": "API Integration Developer",
@@ -403,7 +445,14 @@
     "icon": "lets-icons:group",
     "categories": ["Technology"],
     "job_type": "Contract",
-    "workplace": "Remote"
+    "workplace": "Remote",
+    "qualifications": {
+      "education": "Bachelor's degree in Computer Science, Information Technology, or related field.",
+      "experience": "3-4 years of experience in API development and integration.",
+      "problem_solving": "Strong troubleshooting skills for API-related issues and performance bottlenecks.",
+      "learning_mindset": "Stays updated with API technologies, security best practices, and integration patterns.",
+      "communication": "Excellent documentation skills and ability to work with cross-functional teams."
+    }
   },
   {
     "title": "DevOps-Ready Developer",
@@ -462,7 +511,14 @@
     "icon": "circum:monitor",
     "categories": ["Engineering", "Technology"],
     "job_type": "Full-time",
-    "workplace": "On-site"
+    "workplace": "On-site",
+    "qualifications": {
+      "education": "Bachelor's degree in Computer Science, Information Technology, or related field.",
+      "experience": "2-3 years of experience with DevOps practices and containerization.",
+      "problem_solving": "Strong troubleshooting skills for deployment and infrastructure issues.",
+      "learning_mindset": "Passionate about automation, cloud technologies, and infrastructure as code.",
+      "communication": "Good communication skills for collaborating with development and operations teams."
+    }
   },
   {
     "title": "GraphQL Developer",
@@ -520,7 +576,14 @@
     "icon": "tabler:briefcase",
     "categories": ["Technology"],
     "job_type": "Full-time",
-    "workplace": "Hybrid"
+    "workplace": "Hybrid",
+    "qualifications": {
+      "education": "Bachelor's degree in Computer Science or related field.",
+      "experience": "2-4 years of experience with GraphQL and modern API development.",
+      "problem_solving": "Strong analytical skills for query optimization and schema design.",
+      "learning_mindset": "Keeps up with GraphQL ecosystem and emerging API technologies.",
+      "communication": "Excellent documentation skills and ability to explain GraphQL concepts to team members."
+    }
   },
   {
     "title": "MERN Stack Developer",
@@ -571,6 +634,13 @@
     "icon": "si:money-duotone",
     "categories": ["Engineering"],
     "job_type": "Full-time",
-    "workplace": "On-site"
+    "workplace": "On-site",
+    "qualifications": {
+      "education": "Bachelor's degree in Computer Science, Information Technology, or related field.",
+      "experience": "1-3 years of experience in full-stack development with MERN stack.",
+      "problem_solving": "Strong problem-solving skills with experience in debugging full-stack applications.",
+      "learning_mindset": "Passionate about learning new technologies and improving development workflows.",
+      "communication": "Good communication skills for collaborating with team members and stakeholders."
+    }
   }
 ]

@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 
 import Navbar from "@/components/header/navbar";
 import JobDetails from "@/components/job-details/jobDetails";
+import Footer from "@/components/footer/footer";
 
 const JobDetailsPage = ({ params }) => {
   const routerParams = useParams();
@@ -14,6 +15,8 @@ const JobDetailsPage = ({ params }) => {
     <>
       <Navbar navBgColor="qh-navbar__bg" />
       <JobDetails jobId={jobId} />
+
+      <Footer />
     </>
   );
 };

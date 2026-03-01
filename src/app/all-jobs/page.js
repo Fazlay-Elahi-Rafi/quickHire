@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/footer";
 import Navbar from "@/components/header/navbar";
 import JobCard from "@/components/job/job-card";
 import React from "react";
@@ -13,6 +14,8 @@ const AllJobsPage = () => {
     <>
       <Navbar navBgColor="qh-navbar__bg" />
       <JobCard />
+
+      <Footer />
     </>
   );
 };
